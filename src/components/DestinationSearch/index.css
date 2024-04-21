@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.yoho{
+  display: none;
+}
+.bgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+}
+.inputStyle {
+  padding-right: 30px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px; /* Adjust the size as per your requirement */
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f1f5f9;
+}
+.listContainerStyle {
+  align-self: center;
+  padding-top: 20px;
+  max-width: 85vw;
+}
+.mainHeading {
+  font-family: roboto;
+  font-size: 32px;
+  margin-top: 50px;
+}
+.listContainerStyle {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .mainHeading {
+    align-self: center;
+  }
+  .inputStyle {
+    padding-right: 30px;
+    background-image: url('https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    align-self: center;
+  }
+  .listContainerStyle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .mainHeading {
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 13vw;
+  }
+  .inputStyle {
+    align-self: flex-start;
+    margin-left: 13vw;
+    width: 270px;
+    padding-left: 13px;
+  }
+  .listContainerStyle {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0px;
+  }
+}
